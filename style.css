@@ -56,3 +56,22 @@
     font-size: 16px;
     color: #f37676;
 }
+
+.couleur1 {
+    background-color: #222;
+}
+
+.couleur2 {
+    background-color: #333;
+}
+
+.texterouge {
+    font-size: 16px;
+    color: #f37676;
+}
+
+.titrerouge {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #b74537;
+}
