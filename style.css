@@ -70,8 +70,12 @@
     color: #f37676;
 }
 
-.titrerouge {
+.titrerouge, .navbar-brand:hover {
     font-size: 20px;
     margin-bottom: 5px;
     color: #b74537;
+}
+
+.btncontact:hover, .nav-link:hover {
+    color: #ffffff
 }
