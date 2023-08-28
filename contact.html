@@ -26,47 +26,52 @@
     <div id="header"></div>
 
     <!-- Corps de Page-->
-        <div class="container bg-secondary">
-            <form method="POST" class="couleur1">
-                    <h1 class="titreform bienvenue bg-secondary fw-bold">Formulaire de contact</h1>
-                <!-- Premier champ -->
-                <div class="row row-cols-12">
-                    <div class="col-6">
-                        <fieldset>
-                            <!-- Informations principales -->
-                            <div class="py-2">
-                                <input type="text" name="pseudo" placeholder="Pseudo *" maxlength="10" required class="case">
-                                <input type="number" name="age" placeholder="Âge *" required class="case">
+        <div class="container-100 bg-secondary">
+            <div class="row row-cols-3">
+                <div class="col"></div>
+                <div class="col align-self-center">
+                    <form method="POST" class="couleur1">
+                        <h1 class="titreform bienvenue bg-secondary fw-bold">Formulaire de contact</h1>
+                    <!-- Premier champ -->
+                        <div class="row row-cols-12">
+                            <div class="col-6 mx-3">
+                                <fieldset>
+                                    <!-- Informations principales -->
+                                    <div class="py-2">
+                                        <input type="text" name="pseudo" placeholder="Pseudo *" maxlength="10" required class="case">
+                                        <input type="number" name="age" placeholder="Âge *" required class="case">
+                                    </div>
+                                    <div class="py-2">
+                                        <input type="email" name="email" placeholder="Adresse E-Mail *" required class="case">
+                                    </div>
+                                    <!-- Informations secondaires -->
+                                    <div class="py-2 text-light">
+                                        <label for="film">Quel type de produit est concerné par votre commentaire ? <span>*</span></label><br>
+                                        <select name="produit" id="produit" required>
+                                            <option value="">Vins rouges</option>
+                                            <option value="option2">Vins blancs</option>
+                                            <option value="option3">Vins rosés</option>
+                                            <option value="option4">Champagnes</option>
+                                            <option value="option5">Vins pétillants</option>
+                                        </select>
+                                    </div>
+                                    <div class="py-2 text-light">
+                                        <label for="comment">Votre commentaire ou question: <span>*</span></label><br>
+                                        <textarea name="comment" id="comment" cols="70" rows="10" placeholder="Votre texte ici" maxlength="280" required></textarea>
+                                    </div>
+                                </fieldset>
                             </div>
-                            <div class="py-2">
-                                <input type="email" name="email" placeholder="Adresse E-Mail *" required class="case">
-                            </div>
-                            <!-- Informations secondaires -->
-                            <div class="py-2">
-                                <label for="film">Quel type de produit est concerné par votre commentaire ? <span>*</span></label><br>
-                                <select name="film" id="film" required>
-                                    <option value="">Vins rouges</option>
-                                    <option value="option2">Vins blancs</option>
-                                    <option value="option3">Vins rosés</option>
-                                    <option value="option4">Champagnes</option>
-                                    <option value="option5">Vins pétillants</option>
-                                </select>
-                            </div>
-                            <div class="py-2">
-                                <label for="comment">Votre commentaire ou question: <span>*</span></label><br>
-                                <textarea name="comment" id="comment" cols="70" rows="10" placeholder="Votre texte ici" maxlength="280" required></textarea>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-            </fieldset>
-            <!-- Boutons d'envoi et de reset -->
-            <button type="button" class="btn border my-2 titrerouge">Envoyer</button>
-            <button type="button" class="btn border my-2 titrerouge">Effacer</button>
-            </form>
+                        </div>
+                    </fieldset>
+                    <!-- Boutons d'envoi et de reset -->
+                    <button type="button" class="btn border my-2 mx-3 titrerouge">Envoyer</button>
+                    <button type="button" class="btn border my-2 mx-3 titrerouge">Effacer</button>
+                </form>
+            </div>
         </div>
-
-
+    </div>
+    
+    
     <!-- appel footer -->
     <div id="footer"></div>
     <!-- SCRIPT BOOTSTRAP -->
